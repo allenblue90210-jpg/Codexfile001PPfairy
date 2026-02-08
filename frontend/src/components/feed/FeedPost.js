@@ -173,7 +173,7 @@ export default function FeedPost({ post, onLike, onSave }) {
             <img
               src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/ylxds9kw_Screenshot%202026-02-08%20095953.png"
               alt="Purple Comment"
-              className="h-[34px] w-auto object-contain"
+              className="h-[42px] w-auto object-contain"
             />
           </button>
           <div className="w-[42px]" />
@@ -181,7 +181,7 @@ export default function FeedPost({ post, onLike, onSave }) {
             <img
               src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/u4lzdigr_Screenshot%202026-02-08%20095959.png"
               alt="Girl"
-              className="h-[42px] w-[42px] object-contain"
+              className="h-[50px] w-[50px] object-contain"
             />
           </button>
           <div className="w-[42px]" />
@@ -189,7 +189,7 @@ export default function FeedPost({ post, onLike, onSave }) {
             <img
               src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/hnss7mtz_Screenshot%202026-02-08%20100003.png"
               alt="Gun"
-              className="h-[38px] w-[38px] object-contain"
+              className="h-[46px] w-[46px] object-contain"
             />
           </button>
         </div>
