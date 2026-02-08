@@ -2,7 +2,7 @@ export default function TopNav() {
   return (
     <header
       data-testid="top-nav"
-      className="fixed top-0 left-0 right-0 z-40 h-[70px] bg-white/95 backdrop-blur-md border-b border-black/5 flex items-center justify-between px-3"
+      className="fixed top-0 left-0 right-0 z-40 h-[110px] bg-white/95 backdrop-blur-md border-b border-black/5 flex items-center justify-between px-3"
     >
       <div className="flex items-center gap-[6px] overflow-x-auto scrollbar-hide">
         <img
