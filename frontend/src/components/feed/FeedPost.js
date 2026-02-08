@@ -124,7 +124,7 @@ export default function FeedPost({ post, onLike, onSave }) {
                   ? "https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/480tpvit_Screenshot%202026-02-08%20101942.png"
                   : "https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/o69f198i_Screenshot%202026-02-08%20095920.png"}
                 alt="Like"
-                className="h-[34px] w-[34px] object-contain transition-transform duration-200"
+                className={`object-contain transition-transform duration-200 ${post.is_liked ? "h-[42px] w-[42px]" : "h-[34px] w-[34px]"}`}
               />
             </button>
             <button data-testid={`comment-btn-${post.id}`} className="press-effect w-[42px] flex justify-center">
