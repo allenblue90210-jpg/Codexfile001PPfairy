@@ -33,12 +33,16 @@ export default function TopNav() {
           alt="Circle"
           className="h-[42px] w-[42px] object-contain flex-shrink-0"
         />
-        <img
-          data-testid="monster-icon"
-          src="https://customer-assets.emergentagent.com/job_feed-preview-1/artifacts/qvkzdv3o_Screenshot%202026-02-08%20084135.png"
-          alt="Monster"
-          className="h-[42px] w-auto object-contain flex-shrink-0"
-        />
+        <button onClick={() => setMonsterToggled(!monsterToggled)} className="flex-shrink-0 p-0 border-0 bg-transparent cursor-pointer">
+          <img
+            data-testid="monster-icon"
+            src={monsterToggled
+              ? "https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/1qnm9gi3_Screenshot%202026-02-08%20102041.png"
+              : "https://customer-assets.emergentagent.com/job_feed-preview-1/artifacts/qvkzdv3o_Screenshot%202026-02-08%20084135.png"}
+            alt="Monster"
+            className="h-[42px] w-auto object-contain transition-transform duration-200"
+          />
+        </button>
         <img
           data-testid="arrow-icon"
           src="https://customer-assets.emergentagent.com/job_feed-preview-1/artifacts/9jrsskwu_Screenshot%202026-02-08%20084419.png"
