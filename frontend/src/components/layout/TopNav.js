@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 export default function TopNav() {
+  const [monsterToggled, setMonsterToggled] = useState(false);
+
   return (
     <header
       data-testid="top-nav"
