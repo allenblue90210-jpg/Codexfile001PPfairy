@@ -120,9 +120,11 @@ export default function FeedPost({ post, onLike, onSave }) {
               className={`press-effect ${heartAnimating ? "heart-pop" : ""} w-[42px] flex justify-center`}
             >
               <img
-                src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/o69f198i_Screenshot%202026-02-08%20095920.png"
+                src={post.is_liked
+                  ? "https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/480tpvit_Screenshot%202026-02-08%20101942.png"
+                  : "https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/o69f198i_Screenshot%202026-02-08%20095920.png"}
                 alt="Like"
-                className="h-[34px] w-[34px] object-contain"
+                className="h-[34px] w-[34px] object-contain transition-transform duration-200"
               />
             </button>
             <button data-testid={`comment-btn-${post.id}`} className="press-effect w-[42px] flex justify-center">
