@@ -70,7 +70,7 @@ function App() {
     <div className="min-h-screen bg-white" data-testid="app-container">
       <BrowserRouter>
         <TopNav />
-        <main className="pb-[60px] pt-[120px]">
+        <main className="pb-[60px] pt-[100px]">
           <Routes>
             <Route
               path="/"
