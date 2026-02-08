@@ -141,14 +141,14 @@ export default function FeedPost({ post, onLike, onSave }) {
             <img
               src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/zqyyv78k_Screenshot%202026-02-08%20095936.png"
               alt="Phone"
-              className="h-[34px] w-[34px] object-contain"
+              className="h-[42px] w-[42px] object-contain"
             />
           </button>
           <button data-testid={`mask-btn-${post.id}`} className="press-effect">
             <img
               src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/ay7ilnsx_Screenshot%202026-02-08%20095942.png"
               alt="Mask Eyes"
-              className="h-[34px] w-[34px] object-contain"
+              className="h-[42px] w-[42px] object-contain"
             />
           </button>
         </div>
