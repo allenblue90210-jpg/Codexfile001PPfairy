@@ -114,26 +114,45 @@ export default function FeedPost({ post, onLike, onSave }) {
 
       {/* Actions */}
       <div className="flex items-center justify-between px-3 pt-2.5 pb-1">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-8">
           <button
             data-testid={`like-btn-${post.id}`}
             onClick={handleLikeClick}
-            className="press-effect"
+            className={`press-effect ${heartAnimating ? "heart-pop" : ""}`}
           >
-            <Heart
-              size={24}
-              strokeWidth={post.is_liked ? 0 : 1.5}
-              fill={post.is_liked ? "#ED4956" : "none"}
-              className={`${
-                post.is_liked ? "text-[#ED4956]" : "text-[#262626]"
-              } ${heartAnimating ? "heart-pop" : ""} transition-colors duration-200`}
+            <img
+              src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/o69f198i_Screenshot%202026-02-08%20095920.png"
+              alt="Like"
+              className="h-[26px] w-[26px] object-contain"
             />
           </button>
           <button data-testid={`comment-btn-${post.id}`} className="press-effect">
-            <MessageCircle size={24} strokeWidth={1.5} className="text-[#262626]" />
+            <img
+              src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/4krzdywl_Screenshot%202026-02-08%20095928.png"
+              alt="Comment"
+              className="h-[26px] w-[26px] object-contain"
+            />
           </button>
           <button data-testid={`share-btn-${post.id}`} className="press-effect">
-            <Send size={24} strokeWidth={1.5} className="text-[#262626]" />
+            <img
+              src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/nc98ncwg_Screenshot%202026-02-08%20085229.png"
+              alt="Honey Jar"
+              className="h-[26px] w-[26px] object-contain"
+            />
+          </button>
+          <button data-testid={`phone-btn-${post.id}`} className="press-effect">
+            <img
+              src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/zqyyv78k_Screenshot%202026-02-08%20095936.png"
+              alt="Phone"
+              className="h-[26px] w-[26px] object-contain"
+            />
+          </button>
+          <button data-testid={`mask-btn-${post.id}`} className="press-effect">
+            <img
+              src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/ay7ilnsx_Screenshot%202026-02-08%20095942.png"
+              alt="Mask Eyes"
+              className="h-[26px] w-[26px] object-contain"
+            />
           </button>
         </div>
         <button
