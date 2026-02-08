@@ -1,8 +1,5 @@
 import { useState, useRef } from "react";
 import {
-  Heart,
-  MessageCircle,
-  Send,
   Bookmark,
   MoreHorizontal,
 } from "lucide-react";
