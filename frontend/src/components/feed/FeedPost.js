@@ -15,7 +15,6 @@ export default function FeedPost({ post, onLike, onSave }) {
   const [showDoubleTapHeart, setShowDoubleTapHeart] = useState(false);
   const [heartAnimating, setHeartAnimating] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
-  const [maskToggled, setMaskToggled] = useState(false);
   const lastTap = useRef(0);
 
   const handleDoubleTap = () => {
@@ -149,13 +148,11 @@ export default function FeedPost({ post, onLike, onSave }) {
                 className="h-[42px] w-[42px] object-contain"
               />
             </button>
-            <button data-testid={`mask-btn-${post.id}`} className="press-effect w-[42px] flex justify-center" onClick={() => setMaskToggled(!maskToggled)}>
+            <button data-testid={`mask-btn-${post.id}`} className="press-effect w-[42px] flex justify-center">
               <img
-                src={maskToggled
-                  ? "https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/1qnm9gi3_Screenshot%202026-02-08%20102041.png"
-                  : "https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/ay7ilnsx_Screenshot%202026-02-08%20095942.png"}
+                src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/ay7ilnsx_Screenshot%202026-02-08%20095942.png"
                 alt="Mask Eyes"
-                className="h-[42px] w-[42px] object-contain transition-transform duration-200"
+                className="h-[42px] w-[42px] object-contain"
               />
             </button>
           </div>
