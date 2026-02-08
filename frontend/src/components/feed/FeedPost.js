@@ -15,6 +15,7 @@ export default function FeedPost({ post, onLike, onSave }) {
   const [showDoubleTapHeart, setShowDoubleTapHeart] = useState(false);
   const [heartAnimating, setHeartAnimating] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [maskToggled, setMaskToggled] = useState(false);
   const lastTap = useRef(0);
 
   const handleDoubleTap = () => {
