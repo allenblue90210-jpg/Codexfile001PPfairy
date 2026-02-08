@@ -120,35 +120,35 @@ export default function FeedPost({ post, onLike, onSave }) {
             <img
               src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/o69f198i_Screenshot%202026-02-08%20095920.png"
               alt="Like"
-              className="h-[26px] w-[26px] object-contain"
+              className="h-[34px] w-[34px] object-contain"
             />
           </button>
           <button data-testid={`comment-btn-${post.id}`} className="press-effect">
             <img
               src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/4krzdywl_Screenshot%202026-02-08%20095928.png"
               alt="Comment"
-              className="h-[26px] w-[26px] object-contain"
+              className="h-[34px] w-[34px] object-contain"
             />
           </button>
           <button data-testid={`share-btn-${post.id}`} className="press-effect">
             <img
               src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/nc98ncwg_Screenshot%202026-02-08%20085229.png"
               alt="Honey Jar"
-              className="h-[26px] w-[26px] object-contain"
+              className="h-[34px] w-[34px] object-contain"
             />
           </button>
           <button data-testid={`phone-btn-${post.id}`} className="press-effect">
             <img
               src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/zqyyv78k_Screenshot%202026-02-08%20095936.png"
               alt="Phone"
-              className="h-[26px] w-[26px] object-contain"
+              className="h-[34px] w-[34px] object-contain"
             />
           </button>
           <button data-testid={`mask-btn-${post.id}`} className="press-effect">
             <img
               src="https://customer-assets.emergentagent.com/job_codexfile-clone/artifacts/ay7ilnsx_Screenshot%202026-02-08%20095942.png"
               alt="Mask Eyes"
-              className="h-[26px] w-[26px] object-contain"
+              className="h-[34px] w-[34px] object-contain"
             />
           </button>
         </div>
